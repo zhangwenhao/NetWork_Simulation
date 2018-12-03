@@ -14,6 +14,7 @@ public class Main {
 			for (int j = 0; j < loops; j++) {
 				double times=0;
 				NetWork netWork=new NetWork();
+				//generate transmission and receiver node size
 				int totalNodes=getPoissonRandom(Properties.NodeDensity * Properties.NodeX_MAX * Properties.NodeY_MAX);
 				int eavNodes=getPoissonRandom(Properties.EveDensity * Properties.EveX_MAX * Properties.EveY_MAX);
 				netWork.generateNode(totalNodes,eavNodes);
